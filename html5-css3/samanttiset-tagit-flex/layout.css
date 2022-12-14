@@ -1,0 +1,56 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.parent > * {
+    flex-basis: 100%;
+    flex-grow: 1;
+    
+}
+.parent section, .parent aside{
+    flex-basis: 0px;
+    flex-grow: 2;
+}
+
+p{
+    padding: 1rem; color: white;
+}
+
+header{
+    background-color: red; color: white;
+}
+nav{
+    background-color: #FFC000; color: white;
+}
+section{
+    background-color: yellow; color: white;
+    padding-block-end: 1rem;
+    flex-basis: 0px;
+
+}
+section article{
+    background-color: #7AC141; color: white;
+    margin-block-start: 1rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+}
+aside{
+    background-color: #026FB4; color: white;
+    
+}
+footer{
+    background-color: #932B8E; color: white;
+    clear: both;
+}

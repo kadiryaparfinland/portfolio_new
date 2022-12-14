@@ -1,0 +1,287 @@
+body {
+  background-color: #333333;
+}
+.main {
+  padding: 20px;
+  position: relative;
+}
+figure img {
+  max-width: 100%;
+  margin: 0%;
+}
+.header {
+  height: 75px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.header > * {
+  flex-basis: auto;
+}
+
+.menu {
+  display: table;
+  width: 100%;
+  height: 55px;
+  align-content: center;
+  position: fixed;
+  z-index: 10;
+  background-color: black;
+  padding: 10px;
+}
+.menu-item {
+  display: table-cell;
+  color: white;
+  font-size: small;
+  vertical-align: middle;
+}
+.menu-title {
+  color: white;
+  font-size: smaller;
+}
+
+.portfolio {
+  position: relative;
+  align-items: center;
+}
+
+.box-transparent {
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  background-color: rgba(100, 100, 100, 0.6);
+  padding: 20px;
+  top: 5%;
+  left: 5%;
+  transform: translate(0%, 0%);
+}
+
+.title {
+  color: rgb(225, 137, 13);
+  font-size: medium;
+}
+.sub-title {
+  color: rgb(225, 137, 13);
+  font-size: small;
+}
+
+.anchor {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  top: -75px;
+  left: 0;
+  visibility: hidden;
+}
+
+.menneiysyys {
+  background-color: aliceblue;
+    position: relative;
+}
+
+.menneiysyys-title {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 10px;
+  gap: 10px;
+}
+.cards > * {
+  flex-basis: auto;
+}
+.one-card {
+  padding: 10px;
+  border: 1px;
+  border-color: darkgray;
+  border-style: solid;
+  border-radius: 5px;
+}
+.card-title {
+  font-size: x-small;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+.card-text {
+  font-size: x-small;
+}
+.see-more {
+  font-size: smaller;
+  color: darkorange;
+  margin-top: 3px;
+}
+
+.line {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 2px;
+  background-color: rgb(45, 123, 201);
+  border: 0;
+}
+
+.nykyiysyys-title {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: darkorange;
+}
+.nykyiysyys-text-and-image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.nykyiysyys-text-and-image > * {
+  flex-basis: min-content;
+  flex-grow: 3;
+}
+.nykyiysyys-text {
+  color: white;
+  flex-grow: 3;
+}
+.nykyiysyys-img {
+  max-width: 100%;
+}
+
+.tulevaiysuus-text-and-image {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.tulevaiysuus-text-and-image > * {
+  flex-basis: min-content;
+  flex-grow: 3;
+}
+.tulevaiysuus-text {
+  color: white;
+  flex-grow: 3;
+}
+.tulevaiysuus-img {
+  max-width: 100%;
+}
+
+.label {
+  color: white;
+}
+.form {
+  position: absolute;
+  left: 30%;
+  width: 200px;
+}
+
+.button {
+  margin-top: 10px;
+  background-color: darkorange;
+  color: white;
+  border-style: solid;
+  border-radius: 5px;
+  border: 0;
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width:426px){
+    .menu{
+       padding: 20px; 
+    }
+    .menu-title {
+  font-size: large;
+}
+.anchor {
+  top: -75px;
+}
+.title {
+  font-size: larger;
+}
+.sub-title {
+  font-size: large;
+}
+.p{
+
+  margin-top: 10px;
+}
+.nykyiysyys-title {
+    font-size: larger;
+}
+.menneiysyys-title {
+    font-size: larger;
+}
+.card-title {
+  font-size: medium;
+}
+.card-text {
+  font-size: medium;
+}
+.form {
+  width: 350px;
+}
+} 
+
+@media only screen and (min-width:769px){
+    .menu{
+       padding: 20px; 
+    }
+    .menu-title {
+  font-size: x-large;
+}
+.anchor {
+  top: -75px;
+}
+.title {
+  font-size: x-large;
+}
+.sub-title {
+  font-size: x-large;
+}
+.p{
+
+  margin-top: 10px;
+}
+.nykyiysyys-title {
+    font-size: x-large;
+}
+.menneiysyys-title {
+    font-size: x-large;
+}
+.card-title {
+  font-size: x-large;
+}
+.card-text {
+  font-size: x-large;
+}
+.form {
+  width: 450px;
+  font-size: x-large;
+}
+.nykyiysyys-text {
+    font-size: x-large;
+}
+.tulevaiysuus-text {
+  font-size: x-large;
+}
+.label {
+  font-size: x-large;
+}
+.button {
+  height: 50px;
+  width:100px;
+  font-size: x-large;
+}
+} 

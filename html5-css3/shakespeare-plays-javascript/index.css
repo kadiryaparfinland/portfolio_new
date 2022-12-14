@@ -1,0 +1,16 @@
+.parent-div-for-lists{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.list-side-by-side{
+    list-style: none;
+}
+button{
+    margin: 40px;
+    background-color: brown;
+    color: white;
+    height: 30px;
+    
+}

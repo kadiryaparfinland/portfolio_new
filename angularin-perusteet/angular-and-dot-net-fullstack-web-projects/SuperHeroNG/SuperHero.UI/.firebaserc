@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angularsuperheroesproject": {
+      "hosting": {
+        "SuperHero.UI": [
+          "angularsuperheroesproject"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angularsuperheroesproject"
+  }
+}

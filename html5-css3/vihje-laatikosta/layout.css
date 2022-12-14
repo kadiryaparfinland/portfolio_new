@@ -1,0 +1,40 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    padding: 1rem;
+}
+p{
+    margin-block-end: 1rem;
+    padding: 1rem;
+}
+
+.even p:nth-child(even){
+    background-color: #E0EAC6;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.odd p:nth-child(odd){
+    background-color: #E0EAC6;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.parent > * {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.parent .odd{
+    flex-grow: 2;
+}

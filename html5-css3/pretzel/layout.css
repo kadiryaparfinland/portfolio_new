@@ -1,0 +1,142 @@
+body{
+    background-color: #F9F6EC;
+}
+figure img{
+    max-width: 100%;
+    margin: 0%;
+}
+
+.special{
+    background: #697F87;
+    padding: 10px;
+    background-image: url(./img/pritzel-four.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+.special-text{
+    color: aliceblue;
+}
+
+.wrapper{
+    padding: 20px;
+}
+.menu-image{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menu{
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.menu-item{
+    display: table-cell;
+}
+.menu-explanation{
+    display: none;
+}
+
+.pretzel-image{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aside-what-pretzel{
+    background-color: #F6E8C8;
+    padding: 10px;
+    text-align: center;
+}
+li{
+    color: rgb(93, 169, 210);
+    text-decoration: underline;
+}
+
+.footer-image{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer-text{
+    text-align: center;
+    font-size: small;
+}
+
+
+@media only screen and (min-width: 426px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        align-items: center;
+    }
+    
+    .header > * {
+    flex-basis: auto;
+    flex-grow: 5;
+    order: 2;
+    }
+
+    .menu-image{
+        margin-right: 50px;
+        margin-top: 0;
+    }
+    .menu-item{
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        align-items: center;
+    }
+    
+    .header > * {
+    flex-basis: auto;
+    flex-grow: 5;
+    order: 2;
+    }
+
+    .menu-image{
+     margin-right: 50px;
+    }
+
+    .menu-explanation{
+        display: table-cell;
+    }
+
+    .menu-title{
+        font-weight: bold;
+    }
+    .menu-item{
+        font-size: larger;
+    }
+
+    .menu-image{
+        margin-top: 0px;
+    }
+
+    .section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+    }
+    .section > * {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+   .section .main{
+        margin-right: 30px;
+        flex-grow: 2;
+    }
+}

@@ -1,0 +1,137 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Gotham, Helvetica, Arial, sans-serif;
+    padding: 1rem;
+    background-color: darkcyan;
+    font-size: 1.4rem;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.wrapper > * {
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.header{
+    background-color: gold;
+}
+
+.wrapper nav {
+    padding: 0;
+}
+
+/*this is for one two three ... list design*/
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.parent > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border: solid 1px;
+    text-align: center;
+}
+/* .numbers-1 .umbers-2 .numbers-3 .numbers-4 .numbers-5 .numbers-6 {
+    border-width: 1rem;
+
+} */
+
+
+/*this is for social media list design*/
+.parent-social-media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.parent-social-media > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1rem;
+    border: solid 1px;
+    text-align: center;
+}
+
+.facebook{
+    background-color: rgb(229, 229, 236);
+}
+
+
+.facebook-image{
+}
+
+.twitter{
+    background-color: rgb(229, 229, 236);
+}
+.twitter-image{
+}
+
+.mail{
+    background-color: rgb(229, 229, 236);
+}
+.mail-image{
+}
+
+.main{
+    background-color: darkorange;
+}
+.aside-1{
+    background-color: mediumseagreen;
+}
+.aside-2{
+    background-color: seagreen;
+}
+
+.footer{
+    background-color: lightgreen;
+}
+
+/* /* /*Tablet size settings*/
+@media only screen and (min-width:426px){
+    body{
+        background-color: brown;
+    }
+    .wrapper{
+        flex-direction:row;
+    }
+    .aside-1{
+        flex-basis:auto;
+    }
+    .aside-2{
+        flex-basis:auto;
+    }
+} 
+
+/*Desktop size settings*/
+@media only screen and (min-width:769px){
+    body{
+        background-color: yellow;
+    }
+
+    .aside-1{
+        order:1;
+        flex-basis:0px;
+    }
+    .aside-2{
+        order:3;
+        flex-basis:0px;
+    }
+    .main{
+        order:2;
+        flex-basis:400px;
+    }
+    .footer{
+        order:4;
+        text-align: center;
+    }
+}  

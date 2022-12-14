@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vsY06SFNshgmNiHhAuJcUGBGT0JAbiJk+f8Di7KcNwk=",
+  "Source": "PokemonReviewWebAPI",
+  "BasePath": "_content/PokemonReviewWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

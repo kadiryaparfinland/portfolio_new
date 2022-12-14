@@ -1,0 +1,38 @@
+<p>Programming Books List</p>
+<button (click)="handleClick()" (mouseover)="handleClick()" (mouseleave)="activateButton()" [disabled] = "isDisable">Disable Button</button>
+
+<br>
+<br>
+
+<br>
+<br>
+
+
+<br>
+<br>
+
+<button (click)="toogleBooks()">
+    <span *ngIf="!isShowing">Show Books</span>
+    <ng-container *ngIf="isShowing">Hide Books</ng-container> <!-- //in here, we do not want to use  spanand we use ng-container -->
+</button>
+
+<br>
+<br>
+
+<ul *ngIf="isShowing">
+    <li class="book">
+        <img src="{{src}}" alt="{{name}}" width="100">
+        {{name}} by {{author}}
+    </li>
+    <br>
+    <li class="book">
+        <img [src]="src" [alt]="name2" width="100">
+        {{name2}} by {{author2}}
+    </li>
+
+    <ng-container *ngFor="let singleBook of books; let i=index" >
+       <app-book (bookEmitter) = "addToCard($event)" [book]="singleBook"></app-book>
+    </ng-container>
+</ul>
+
+<p>deneme</p>

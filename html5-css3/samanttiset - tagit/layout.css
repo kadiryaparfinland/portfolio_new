@@ -1,0 +1,53 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+p{
+    padding: 1rem; color: white;
+}
+
+header{
+    background-color: red; color: white;
+}
+nav{
+    background-color: #FFC000; color: white;
+}
+.container{
+    overflow: hidden;
+
+}
+.column{
+    padding-bottom: 1000px;
+    margin-bottom: -1000px;
+}
+
+section{
+    background-color: yellow; color: white;
+    float: left; width: 50%;
+    box-sizing: border-box;
+}
+section article{
+    background-color: #7AC141; color: white;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+}
+aside{
+    background-color: #026FB4; color: white;
+    vertical-align: baseline;
+    float:left; width: 50%;
+    box-sizing: border-box;
+    padding-bottom: 7rem;
+}
+footer{
+    background-color: #932B8E; color: white;
+    clear: both;
+}
